@@ -5,10 +5,10 @@ import {AiOutlineDown} from "react-icons/ai";
 
 const Header = () => {
   return(
-      <header className='h-[114px] w-full px-[60px] py-[30px] flex space-x-44 items-center border-b-2 border-b-amber-900'>
+      <header className='h-[114px] w-full px-[60px] py-[30px] flex place-content-between items-center border-b-2 border-b-amber-900'>
           <img alt={'Logo Hemlè'} src='/Logo_Hemle-V2-39.svg'/>
           <nav>
-              <ul className={'text-white flex space-x-10 text-sm'}>
+              <ul className={'text-white flex space-x-[40px] text-sm'}>
                   <li>ACCUEIL</li>
                   <li className={'flex items-center space-x-1'}>
                       <p className={'text-sm'}>PRESTATIONS</p>
