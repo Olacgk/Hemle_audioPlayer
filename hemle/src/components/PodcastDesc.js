@@ -1,5 +1,7 @@
 import React from "react";
 import {FiRadio} from "react-icons/fi";
+import {MdOpenInFull, MdOutlineShare} from "react-icons/md";
+import {AiOutlineClockCircle} from "react-icons/ai";
 
 const PodcastDesc = () => {
     return(
@@ -20,11 +22,16 @@ const PodcastDesc = () => {
                     <div className={'text-[#A0A19F] text-[25px]'}>•</div>
                     <div className={'text-[#A0A19F] text-[16px] leading-[32px]'}>10 Mai 2022</div>
                 </div>
-                <div className={'flex mb-[25px] mt-[16px]'}>
+                <div className={'flex mb-[25px] mt-[16px] place-content-between items-center'}>
                     <button className={'gap-x-4 flex text-white items-center border-[1px] border-white rounded-[4px] h-[50px] w-[142px] justify-center'}>
                         ECOUTER
                         <FiRadio className={'fill-white'}/>
                     </button>
+                    <div className={'flex space-x-3'}>
+                        <MdOpenInFull className={'fill-white h-[24px] w-[24px]'}/>
+                        <AiOutlineClockCircle className={'fill-white h-[24px] w-[24px]'}/>
+                        <MdOutlineShare className={'fill-white h-[24px] w-[24px]'}/>
+                    </div>
 
                 </div>
             </div>
