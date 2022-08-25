@@ -2,11 +2,12 @@ import React from "react";
 import {FiRadio} from "react-icons/fi";
 import {MdOpenInFull, MdOutlineShare} from "react-icons/md";
 import {AiOutlineClockCircle} from "react-icons/ai";
+import methode_agile from '../assets/methode_agile.png'
 
 const PodcastDesc = () => {
     return(
         <div className={'flex px-[63px] gap-x-7'}>
-            <img alt={'Podcast view'} src={'/methode_agile.png'} className={'w-[464px] h-[325px]'}/>
+            <img alt={'Podcast view'} src={methode_agile} className={'w-[464px] h-[325px]'}/>
             <div className={'border-b-2 border-[#A0A19F]'}>
                 <div className={'flex text-black space-x-4'}>
                     <h5 className={'bg-white w-[54px] h-[25px] text-center'}>travail</h5>

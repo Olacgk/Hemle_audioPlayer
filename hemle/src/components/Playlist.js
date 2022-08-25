@@ -1,6 +1,7 @@
 import React from "react";
-import {MdOpenInFull, MdOutlineShare} from "react-icons/md";
+import {MdOutlineShare} from "react-icons/md";
 import {AiOutlineClockCircle} from "react-icons/ai";
+import methode_agile from '../assets/methode_agile.png'
 
 
 const Playlist = () => {
@@ -10,7 +11,7 @@ const Playlist = () => {
           <div className={'bg-[#292A2A] h-[131px] w-full mt-[30px] mb-[28px] justify-center'}>
               <div className={'px-[16px] py-[16px] flex items-center place-content-between'}>
                   <div className={'flex items-center'}>
-                      <img alt={'podcsat view'} src={'/methode_agile.png'} className={'h-[99px] w-[101px]'}/>
+                      <img alt={'podcsat view'} src={methode_agile} className={'h-[99px] w-[101px]'}/>
                       <div className={'ml-[12px]'}>
                           <p className={'font-semibold text-[18px] leading-[32px] text-white'}>1 Methode agile</p>
                           <div className={'flex text-white space-x-3 items-center'}>

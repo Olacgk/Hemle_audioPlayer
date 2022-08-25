@@ -2,11 +2,12 @@ import React from "react";
 import {FaSearch} from "react-icons/fa";
 import {MdLanguage} from "react-icons/md";
 import {AiOutlineDown} from "react-icons/ai";
+import logo from "../assets/Logo_Hemle-V2-39.svg"
 
 const Header = () => {
   return(
       <header className='h-[114px] w-full px-[60px] py-[30px] flex place-content-between items-center border-b-2 border-b-amber-900'>
-          <img alt={'Logo Hemlè'} src='/Logo_Hemle-V2-39.svg'/>
+          <img alt={'Logo Hemlè'} src={logo}/>
           <nav>
               <ul className={'text-white flex space-x-[40px] text-sm'}>
                   <li>ACCUEIL</li>
