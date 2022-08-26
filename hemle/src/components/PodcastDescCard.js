@@ -4,8 +4,8 @@ import {MdOutlineShare} from "react-icons/md";
 
 const PodcastDescCard = ({id, photo, title, date}) => {
   return(
-      <div className={'bg-[#292A2A] h-[131px] w-full mt-[30px] mb-[28px] justify-center'}>
-          <div className={'px-[16px] py-[16px] flex items-center place-content-between'}>
+      <div className={'bg-[#292A2A] md:h-[131px] w-full mt-[30px] mb-[28px] justify-center'}>
+          <div className={'px-[16px] py-[16px] md:flex items-center place-content-between'}>
               <div className={'flex items-center'}>
                   <img alt={'podcsat view'} src={photo} className={'h-[99px] w-[101px]'}/>
                   <div className={'ml-[12px]'}>
