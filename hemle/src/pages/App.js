@@ -12,7 +12,7 @@ function App() {
         <ArianeThread/>
         <PodcastDesc/>
         <Playlist/>
-        {/*<Playerbottom/>*/}
+        <Playerbottom/>
     </div>
   );
 }

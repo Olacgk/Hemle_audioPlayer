@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import methode_agile from '../assets/methode_agile.png'
 import {FiRadio} from "react-icons/fi";
-import {MdClose, MdOpenInFull, MdOutlineForward10, MdOutlineReplay10, MdPlayArrow} from "react-icons/md";
+import {MdOpenInFull, MdOutlineForward10, MdOutlineReplay10, MdPlayArrow} from "react-icons/md";
 import { Progress } from "@material-tailwind/react";
+import {IoMdCloseCircle} from "react-icons/io";
 
 
 
 const Playerbottom = ({photo, title, ...props}) => {
+
+    const [open, setOpen] = useState(false)
+
   return(
-      <div className={'fixed bottom-0 w-full'}>
+      <div className={`bottom-0 w-full ${open ? 'fixed' : 'hidden'}`}>
           <Progress value={50} color={'#FF462D'} className={'relative'}/>
           <div className={"flex py-[20px] bg-black w-full md:px-[60px] px-[30px] place-content-between items-center"}>
               <div className={'space-x-[20px] flex items-center'}>
@@ -24,7 +28,7 @@ const Playerbottom = ({photo, title, ...props}) => {
                   <MdPlayArrow className={'h-[24px] w-[24px] cursor-pointer'}/>
                   <MdOutlineForward10 className={'h-[24px] w-[24px] cursor-pointer'}/>
                   <MdOpenInFull  className={'h-[24px] w-[24px] cursor-pointer'}/>
-                  <MdClose className={'h-[24px] w-[24px] cursor-pointer'}/>
+                  <IoMdCloseCircle onClick={() =>(setOpen(!open))} className={'h-[24px] w-[24px] cursor-pointer'}/>
               </div>
           </div>
 
