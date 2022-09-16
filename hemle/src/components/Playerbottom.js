@@ -7,9 +7,9 @@ import {IoMdCloseCircle} from "react-icons/io";
 
 
 
-const Playerbottom = ({photo, title, ...props}) => {
+const Playerbottom = ({photo, title, handleClick, ...props}) => {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(true)
 
   return(
       <div className={`bottom-0 w-full ${open ? 'fixed' : 'hidden'}`}>
@@ -28,7 +28,7 @@ const Playerbottom = ({photo, title, ...props}) => {
                   <MdPlayArrow className={'h-[24px] w-[24px] cursor-pointer'}/>
                   <MdOutlineForward10 className={'h-[24px] w-[24px] cursor-pointer'}/>
                   <MdOpenInFull  className={'h-[24px] w-[24px] cursor-pointer'}/>
-                  <IoMdCloseCircle onClick={() =>(setOpen(!open))} className={'h-[24px] w-[24px] cursor-pointer'}/>
+                  <IoMdCloseCircle onClick={handleClick} className={'h-[24px] w-[24px] cursor-pointer'}/>
               </div>
           </div>
 

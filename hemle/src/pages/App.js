@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import PodcastDesc from "../components/PodcastDesc";
 import Playlist from "../components/Playlist";
 import ArianeThread from "../components/ArianeThread";
-import Playerbottom from "../components/Playerbottom";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <ArianeThread/>
         <PodcastDesc/>
         <Playlist/>
-        <Playerbottom/>
     </div>
   );
 }

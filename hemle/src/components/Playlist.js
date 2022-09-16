@@ -1,19 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
 import {playlistContent} from '../data/playlistContent'
 import PodcastDescCard from "./PodcastDescCard";
+import Playerbottom from "./Playerbottom";
 
 
 const Playlist = () => {
+
+    const [open, setOpen] = useState(false)
+    const handleClick = () => {
+        setOpen(!open)
+    }
+
   return(
-      <div className={'md:px-[60px] px-[30px] mt-[40px]'}>
-          <p className={'w-full h-[70px] border-b-2 border-[#A0A19F] text-[36px] text-white font-semibold'}>Playlist</p>
+      <div>
+          <div className={'md:px-[60px] px-[30px] mt-[40px]'}>
+              <p className={'w-full h-[70px] border-b-2 border-[#A0A19F] text-[36px] text-white font-semibold'}>Playlist</p>
+              {
+                  playlistContent.map( playlist => {
+                      return (
+                          <PodcastDescCard key={playlist.id} handleClick={handleClick} date={playlist.date} id={playlist.id} photo={playlist.photo} title={playlist.title}/>
+                      )
+                  } )
+              }
+          </div>
           {
-              playlistContent.map( playlist => {
-                  return (
-                      <PodcastDescCard date={playlist.date} id={playlist.id} photo={playlist.photo} title={playlist.title}/>
-                  )
-              } )
+              open? <Playerbottom handleClick={handleClick}/> : <></>
           }
+
       </div>
   )
 }
